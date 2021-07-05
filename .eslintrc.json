@@ -1,0 +1,7 @@
+{
+    "extends": [
+        "artcom-react",
+        "plugin:react-hooks/recommended"
+    ],
+    "parser": "babel-eslint"
+}
