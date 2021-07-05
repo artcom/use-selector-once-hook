@@ -8,7 +8,7 @@ A react hook for memoizing the redux state on mount time. By leveraging redux *u
 import React from "react"
 import { useSelectorOnce } from "@artcom/use-selector-once-hook"
 
-const MyComponent = ({  }) => {
+const MyComponent = () => {
   const memoizedCounter = useSelectorOnce(state => state.counter)
 }
 ```
