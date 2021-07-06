@@ -1,6 +1,6 @@
 {
   "name": "@artcom/use-selector-once-hook",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A react hook for memoizing the redux state on mount time.",
   "files": [
     "lib/"
