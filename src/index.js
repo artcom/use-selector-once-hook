@@ -4,7 +4,10 @@ import { useStore } from "react-redux"
 export function useSelectorOnce(selector) {
   const store = useStore()
   const state = useRef()
-  state.current = state.current || store.getState()
+
+  if (!state.current) {
+    state.current = store.getState()
+  }
+
   return selector(state.current)
 }
-
