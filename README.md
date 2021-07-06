@@ -1,7 +1,11 @@
 # Use Selector Once Hook
 
-A react hook for memoizing the redux state on mount time. By leveraging redux *useStore* and redux *useCallback*, no re-renderings are triggered on store updates. A component that uses this hook gets the state of the store at mount time on the first rendering.
+A react hook for memoizing the redux state on mount time. It povides the state of the store on the first rendering and does not lead to re-render due to state updates. Equivalent to redux *useSelector* hook, *useSelectorOnce* expects a selector function as parameter.
+## Installation
 
+```bash
+npm i @artcom/use-selector-once-hook --save
+```
 ## Example
 
 ```javascript
@@ -15,7 +19,7 @@ const MyComponent = () => {
 
 ## Tests
 
-Checkout the [tests](./test/useSelectorOnce.test.js).
+See [tests](./test/useSelectorOnce.test.js).
 
 ```bash
 npm i && npm run test
